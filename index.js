@@ -5,7 +5,7 @@ const precinct = require("precinct");
 const resolve = require("resolve");
 const readPkgUp = require("read-pkg-up");
 
-const PATH_AWS_MSJ = path.join(process.cwd(), "server", "entry.aws.mjs");
+const PATH_AWS_MSJ = path.join(process.cwd(), "server", "entry.aws-lambda.mjs");
 
 class QwikServerlessPlugin {
   constructor(serverless) {
