@@ -10,6 +10,7 @@ const PATH_AWS_MSJ = path.join(process.cwd(), "server", "entry.aws-lambda.mjs");
 class QwikServerlessPlugin {
   constructor(serverless) {
     this.serverless = serverless;
+
     this.hooks = {
       initialize: () => this.init(),
     };

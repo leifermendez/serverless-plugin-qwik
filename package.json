@@ -1,17 +1,22 @@
 {
   "name": "serverless-plugin-qwik",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "node ./update-yaml.js"
   },
   "keywords": [],
   "author": "Leifer Mendez",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.7.2",
+    "js-yaml": "^4.1.0",
     "precinct": "^8.1.0",
     "read-pkg-up": "^7.0.1",
-    "resolve": "^1.15.0"
+    "resolve": "^1.15.0",
+    "serverless-plugin-common-excludes": "^4.0.0",
+    "serverless-plugin-include-dependencies": "^5.0.0",
+    "yaml-ast-parser": "^0.0.43"
   }
 }
