@@ -1,6 +1,8 @@
 # serverless-plugin-qwik
 This is a Serverless plugin that should make scan about differents packages implementeds in your Qwik application.
 
+> Notice: You must view all informacion about it in the Qwik official documentation. [View more](https://qwik.builder.io/qwikcity/adaptors/overview/)
+
 ```shell
 npm i serverless-plugin-qwik@latest -D
 ```
