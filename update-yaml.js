@@ -19,8 +19,8 @@ const addNewArrayItem = () => {
     yamlObj.plugins = [];
   }
   const requireDep = [
-    "serverless-plugin-include-dependencies",
     "serverless-plugin-common-excludes",
+    "serverless-plugin-include-dependencies",
   ];
   const currentPlugin = yamlObj.plugins || [];
 
