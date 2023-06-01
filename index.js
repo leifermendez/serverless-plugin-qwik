@@ -38,11 +38,11 @@ class QwikServerlessPlugin {
   }
 
   deep(name) {
-    const moduleName = name.replace(/\\/, "/");
-    const pathToModule = resolve.sync(path.join(moduleName, "package.json"), {
-      basedir: process.cwd() + "/node_modules",
-    });
     try {
+      const moduleName = name.replace(/\\/, "/");
+      const pathToModule = resolve.sync(path.join(moduleName, "package.json"), {
+       basedir: process.cwd() + "/node_modules",
+      });
       const pkg = readPkgUp.sync({ cwd: pathToModule });
       return Object.keys(pkg.packageJson.dependencies) || [];
     } catch (e) {
